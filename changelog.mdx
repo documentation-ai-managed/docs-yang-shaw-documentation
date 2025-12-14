@@ -1,0 +1,132 @@
+---
+title: Changelog
+description: Version history and updates for Cheney Communications, highlighting new features and improvements.
+---
+
+## Overview
+
+Stay informed about the latest changes to Cheney Communications. You access this changelog to track new features, improvements, bug fixes, and deprecations. We release updates regularly to enhance your experience with our communications platform.
+
+<Callout kind="info">
+  Subscribe to our RSS feed or join the newsletter to receive changelog notifications directly.
+</Callout>
+
+## Recent Updates
+
+<Update label="2024-10-15" description="v0.3.0" tags={["feature", "bugfix"]}>
+
+## New Features
+
+- Added real-time messaging dashboard for monitoring communications.
+- Introduced API endpoints for automated message broadcasting.
+
+## Improvements
+
+- Enhanced performance of message delivery by `>30%`.
+- Updated UI with brand color `#4462ec` for better visibility.
+
+## Bug Fixes
+
+- Fixed intermittent connection drops in live chat.
+- Resolved authentication issues with expired tokens.
+
+</Update>
+
+<Update label="2024-09-20" description="v0.2.0" tags={["feature", "improvement"]}>
+
+## New Features
+
+- Launched contact management system with search and filters.
+- Integrated webhook support for external notifications.
+
+## Improvements
+
+- Optimized database queries for faster contact lookups.
+- Added customizable templates for outbound messages.
+
+</Update>
+
+<Update label="2024-08-10" description="v0.1.0" tags={["feature"]}>
+
+## Initial Release
+
+- Core website launch with "coming soon" placeholder.
+- Basic user authentication and profile setup.
+- Communications API beta with message sending endpoints.
+
+</Update>
+
+## Upcoming Changes
+
+<Expandable title="Planned Features" default-open="false">
+
+You can expect these enhancements in the next release:
+
+- Advanced analytics for message engagement.
+- Multi-channel support (email, SMS, push notifications).
+- Deprecation of legacy v0.1.0 endpoints in favor of v1.0.
+
+</Expandable>
+
+<Callout kind="tip">
+  Check the [roadmap](https://cheneycommunications.com/roadmap) for detailed timelines.
+</Callout>
+
+## How to Stay Updated
+
+Follow these steps to keep your integration current:
+
+<Steps>
+  <Step title="Subscribe to Updates" icon="bell">
+    Visit the notifications page and enable changelog alerts.
+  </Step>
+  <Step title="Check Version" icon="package">
+    Query your API response for the current version:
+    
+    <CodeGroup tabs="JavaScript,Python">
+      ```javascript
+      const response = await fetch('https://api.cheneycommunications.com/v1/status');
+      const version = response.version; // e.g., "0.3.0"
+      console.log(`Current version: ${version}`);
+      ```
+      ```python
+      import requests
+      response = requests.get('https://api.cheneycommunications.com/v1/status')
+      version = response.json()['version']  # e.g., "0.3.0"
+      print(f"Current version: {version}")
+      ```
+    </CodeGroup>
+  </Step>
+  <Step title="Test Changes" icon="play">
+    Use our sandbox environment to validate updates before production.
+  </Step>
+</Steps>
+
+## Quick Links
+
+<Columns cols={3}>
+  <Card title="API Reference" icon="code" href="/docs/api">
+    Explore endpoints and parameters.
+  </Card>
+  <Card title="Roadmap" icon="map" href="/docs/roadmap">
+    View future plans.
+  </Card>
+  <Card title="Contribute" icon="github" href="https://github.com/cheneycommunications/docs" target="_blank">
+    Report issues or suggest features.
+  </Card>
+</Columns>
+
+<Tabs>
+  <Tab title="Deprecated" icon="alert-triangle">
+    v0.1.0 endpoints will be removed in v1.0. Migrate to new paths.
+  </Tab>
+  <Tab title="Migration Guide" icon="arrow-right">
+    ```javascript
+    // Old
+    fetch('/v0/messages');
+    
+    // New
+    fetch('/v1/channels/{channelId}/messages');
+    ```
+  </Tab>
+</Tabs>

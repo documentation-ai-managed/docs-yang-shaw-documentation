@@ -1,0 +1,126 @@
+---
+title: Frequently Asked Questions
+description: Common questions and answers about Cheney Communications, covering setup, usage, and upcoming developments.
+---
+
+## Overview
+
+You have questions about Cheney Communications? Find quick answers here on account access, service timelines, support options, and beta programs. Our platform focuses on modern communications tools, currently in development with a launch soon.
+
+<Callout kind="info">
+  Cheney Communications builds secure, scalable messaging solutions. Sign up for updates to stay informed.
+</Callout>
+
+## Quick Actions
+
+<Columns cols={2}>
+  <Card title="Join Beta" icon="star" href="/beta-signup">
+    Get early access to new features.
+  </Card>
+  <Card title="Contact Support" icon="message-circle" href="/support">
+    Reach our team directly.
+  </Card>
+</Columns>
+
+## Account and Access
+
+<ExpandableGroup>
+
+<Expandable title="How do I create an account?">
+
+Follow these steps to set up your account quickly.
+
+<Steps>
+  <Step title="Visit Signup" icon="user-plus">
+    Go to the Cheney Communications homepage and click "Sign Up".
+  </Step>
+  <Step title="Enter Details" icon="edit-3">
+    Provide your email, name, and password. Verify with the sent code.
+  </Step>
+  <Step title="Confirm" icon="check-circle">
+    Check your inbox and activate your account.
+  </Step>
+</Steps>
+
+</Expandable>
+
+<Expandable title="What if I forgot my password?">
+
+Use the "Forgot Password" link on the login page. Enter your registered email to receive a reset link valid for 15 minutes. Create a strong password with at least 12 characters, including uppercase, lowercase, numbers, and symbols.
+
+</Expandable>
+
+<Expandable title="Can I use multiple accounts?">
+
+You manage one primary account per email. For teams, invite members via the dashboard after logging in. Upgrade to pro plans for unlimited sub-accounts.
+
+</Expandable>
+
+</ExpandableGroup>
+
+## Service Availability Timeline
+
+Our core messaging service launches Q4 2024. Here's the roadmap:
+
+| Phase | Timeline | Features |
+|-------|----------|----------|
+| Beta   | October 2024 | Basic chat, API access |
+| Launch | December 2024 | Voice, file sharing |
+| Pro    | Q1 2025 | Analytics, integrations |
+
+<Callout kind="tip">
+  Join the beta for early feedback and priority access.
+</Callout>
+
+## Support Contact Methods
+
+<Tabs>
+  <Tab title="Email" icon="mail">
+    Send detailed issues to `support@cheneycommunications.com`. Expect a response within 24 hours.
+  </Tab>
+  <Tab title="Form" icon="file-text">
+    Use the in-app contact form for quick submissions. Include screenshots for faster resolution.
+  </Tab>
+  <Tab title="Discord" icon="message-circle">
+    Join our community server at `discord.gg/cheneycomm` for real-time help.
+  </Tab>
+</Tabs>
+
+## Beta Participation
+
+<Expandable title="How to join the beta program?" default-open="true">
+
+Sign up now to test upcoming features.
+
+1. Visit `/beta-signup`.
+2. Enter your details.
+3. Await approval email (1-2 days).
+
+Once approved, configure your beta environment:
+
+<CodeGroup tabs="Node.js,Python">
+  ```javascript
+  const cheney = require('cheney-comm');
+  const client = new cheney.Client({ apiKey: 'YOUR_BETA_KEY' });
+  client.connect();
+  ```
+  ```python
+  import cheney
+  client = cheney.Client(api_key="YOUR_BETA_KEY")
+  client.connect()
+  ```
+</CodeGroup>
+
+Report issues via the beta dashboard.
+
+</Expandable>
+
+<Expandable title="What are beta limitations?">
+
+Beta users experience occasional downtime for updates. Features may change before launch. Use production keys only after full release.
+
+</Expandable>
+
+## Additional Resources
+
+Explore our [documentation](/docs) for setup guides. For API details, check the developer section. Stay tuned for launch announcements.
